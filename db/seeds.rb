@@ -7,3 +7,11 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
+City.destroy_all
+Restaurant.destroy_all
+Review.destroy_all
+
+atlanta = City.new
+atlanta.name = "Atlanta"
+atlanta.photo_url = "https://www.nycastings.com/wp-content/uploads/2017/11/Atlanta.jpg"
+atlanta.save
