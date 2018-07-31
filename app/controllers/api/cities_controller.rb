@@ -27,6 +27,6 @@ class Api::CitiesController < ApplicationController
   private
 
   def city_params
-    params.require(:city).permit(:name, :image)
+    params.require(:city).permit(:name, :photo_url, :restaurants)
   end
 end
