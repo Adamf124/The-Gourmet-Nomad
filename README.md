@@ -22,7 +22,10 @@ This app is deployed to Heroku [here](https://the-gourmet-nomad.herokuapp.com/)
 ## Versioning
 
 So far. This is version 1. 
-Version 2 will be finished by 8/10/18. Hopefully this will include a more in-depth frontend as well as a google API for geolocation. 
+Version 2 will be finished by 8/10/18. 
+
+Hopefully this will include a more in-depth frontend as well as a google API for geolocation.
+
 Version 3 release date: TBD
 
 ## Authors
