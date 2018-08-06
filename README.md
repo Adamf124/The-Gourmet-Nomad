@@ -1,5 +1,5 @@
 # The Gourmet Nomad
-This app is the product of everything I've learned across a 17 week period. Okay, maybe not everything, but I have been through the ringer to get this far lol. This was initially a traveler's app for restaurants that are worth visiting. 
+This app is the product of everything I've learned across a 17 week period. Okay, maybe not everything, but I have been through the ringer to get this far lol. This was initially a traveler's app for restaurants that are worth visiting in great cities
 
 ## Getting Started
 
@@ -20,8 +20,7 @@ This app is deployed to Heroku [here](https://the-gourmet-nomad.herokuapp.com/)
 ## Versioning
 
 So far. This is version 1. 
-Version 2 will be finished by 8/10. Hopefully this will include a more in-depth frontend as well as a google API for geolocation. 
-iok
+Version 2 will be finished by 8/10/18. Hopefully this will include a more in-depth frontend as well as a google API for geolocation. 
 Version 3 release date: TBD
 
 ## Authors
