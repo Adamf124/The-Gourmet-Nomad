@@ -16,7 +16,7 @@ This app is deployed to Heroku [here](https://the-gourmet-nomad.herokuapp.com/)
 * [Bulma](https://bulma.io) - Front-end Framework
 
 ## Wireframe
-![pic](/public/wireframe.JPG)
+![pic](/client/public/wireframe.JPG)
 
 
 ## Versioning
