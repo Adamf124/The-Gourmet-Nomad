@@ -1,18 +1,24 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+// eslint-disable-next-line
+import { Link, Switch, BrowserRouter as Router, Route } from 'react-router-dom'
+import Homepage from './components/Homepage';
+import Navbar from './components/Navbar';
+import Cities from './components/Cities';
+import Restaurants from './components/Restaurants';
 
 class App extends Component {
+
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <Router>
+        <Switch>
+        <Route exact path="/" component={Homepage} />
+        <Route path="/cities" component={Cities}/>
+        <Route path="/cities/:cityId/restaurant/" component={Restaurants}/>
+
+      </Switch>
+      </Router>
       </div>
     );
   }
