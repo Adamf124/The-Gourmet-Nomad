@@ -13,39 +13,39 @@
 ActiveRecord::Schema.define(version: 2018_07_29_053351) do
 
   # These are extensions that must be enabled in order to support this database
-  enable_extension 'plpgsql'
+  enable_extension "plpgsql"
 
-  create_table 'cities', force: :cascade do |t|
-    t.string 'name'
-    t.string 'photo_url'
-    t.string 'restaurants'
-    t.datetime 'created_at', null: false
-    t.datetime 'updated_at', null: false
+  create_table "cities", force: :cascade do |t|
+    t.string "name"
+    t.string "photo_url"
+    t.string "restaurants"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
-  create_table 'restaurants', force: :cascade do |t|
-    t.string 'name'
-    t.string 'address'
-    t.string 'photo_url'
-    t.string 'description'
-    t.string 'website'
-    t.bigint 'city_id'
-    t.datetime 'created_at', null: false
-    t.datetime 'updated_at', null: false
-    t.index ['city_id'], name: 'index_restaurants_on_city_id'
+  create_table "restaurants", force: :cascade do |t|
+    t.string "name"
+    t.string "address"
+    t.string "photo_url"
+    t.string "description"
+    t.string "website"
+    t.bigint "city_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["city_id"], name: "index_restaurants_on_city_id"
   end
 
-  create_table 'reviews', force: :cascade do |t|
-    t.string 'title'
-    t.string 'author'
-    t.string 'date'
-    t.string 'comment'
-    t.bigint 'restaurant_id'
-    t.datetime 'created_at', null: false
-    t.datetime 'updated_at', null: false
-    t.index ['restaurant_id'], name: 'index_reviews_on_restaurant_id'
+  create_table "reviews", force: :cascade do |t|
+    t.string "title"
+    t.string "author"
+    t.string "date"
+    t.string "comment"
+    t.bigint "restaurant_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["restaurant_id"], name: "index_reviews_on_restaurant_id"
   end
 
-  add_foreign_key 'restaurants', 'cities'
-  add_foreign_key 'reviews', 'restaurants'
+  add_foreign_key "restaurants", "cities"
+  add_foreign_key "reviews", "restaurants"
 end
