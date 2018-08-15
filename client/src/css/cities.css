@@ -17,15 +17,15 @@
     margin:2.2em;
   
   } */
-  .hero {
-      margin-bottom: 4em;
-  }
-  .is-ancestor{
-      /* border: solid; */
-      padding: 5px;
-  }
-  .is-child{
-      /* border: solid; */
-      align-content: center;
-      padding: 1em;
-  }
+.hero {
+    margin-bottom: 4em;
+}
+.is-ancestor{
+    /* border: solid; */
+    padding: 5px;
+}
+.is-child{
+    /* border: solid; */
+    align-content: center;
+    padding: 1em;
+}

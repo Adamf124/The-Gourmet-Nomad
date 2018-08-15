@@ -6,6 +6,7 @@ import Homepage from './components/Homepage';
 import Navbar from './components/Navbar';
 import Cities from './components/Cities';
 import Restaurants from './components/Restaurants';
+import SpecificCity from './components/SpecificCity';
 
 class App extends Component {
 
@@ -15,9 +16,9 @@ class App extends Component {
       <Router>
         <Switch>
         <Route exact path="/" component={Homepage} />
-        <Route path="/cities" component={Cities}/>
-        {/* <Route path="/cities/:cityId" component={SpecificCities}/> */}
-        <Route path="/cities/:cityId/restaurant/" component={Restaurants}/>
+        <Route exact path="/cities" component={Cities}/>
+        <Route exact path="/cities/:cityId" component={SpecificCity}/>
+        <Route exact path="/cities/:cityId/restaurant/" component={Restaurants}/>
 
       </Switch>
       </Router>
