@@ -27,7 +27,7 @@ export default class Homepage extends Component {
             <source src={gourmet} type="video/mp4" />
         </video>
         </div>
-        <section class="hero is-info is-large">
+        <section class="hero is-info is-large is bold">
           <div class="hero-body">
             <div class="container">
               <h1 class="title">

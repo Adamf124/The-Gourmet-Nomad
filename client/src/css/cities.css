@@ -1,0 +1,31 @@
+.city-pictures {
+    margin: auto;
+    border: solid;
+    display:flex;
+    height: 75vh;
+    width: 80vw;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  /* .Atlanta {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 25vw;
+    height: 300px;
+    text-align: center;
+    margin:2.2em;
+  
+  } */
+  .hero {
+      margin-bottom: 4em;
+  }
+  .is-ancestor{
+      /* border: solid; */
+      padding: 5px;
+  }
+  .is-child{
+      /* border: solid; */
+      align-content: center;
+      padding: 1em;
+  }

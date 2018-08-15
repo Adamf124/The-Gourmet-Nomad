@@ -16,8 +16,8 @@ class App extends Component {
         <Switch>
         <Route exact path="/" component={Homepage} />
         <Route path="/cities" component={Cities}/>
+        {/* <Route path="/cities/:cityId" component={SpecificCities}/> */}
         <Route path="/cities/:cityId/restaurant/" component={Restaurants}/>
-        <Navbar/>
 
       </Switch>
       </Router>
